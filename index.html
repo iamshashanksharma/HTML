@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- HTML element is everything from start tag to end tag like html is root element which contains head body and so on elements this is also called nested elements-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    Hey i am shashank
+
+<!-- body element defines document body-->
+
+<body style="background-color: aqua;">
+    <!-- HTML heading start from h1 till h6, h1 represent most imp heading while h6 represents least imp heading-->
+    <!-- Use HTML heading for heading only not for making bold text-->
+
+    <h1 style="background-color: brown;">This is heading 1</h1>
+    <h2 style="background-color: blue;">This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+
+    <!-- HTML paragraphs <p> element defines paragraph-->
+    <!-- Title attribute gives additional info about element-->    
+    <p title="This is a introduction">Hello i am shashank sharma i just completed by btech computer science and engineering from lpu, punjab with first division
+        I am very much interested in web development and study frequently about web technologies
+    </p>
+
+    <!--HTMl anchor tag -->
+
+    <a href="www.google.com"> This is a link</a>
+    <br>
+
+    <!-- Html img tag-->
+
+    <img src="https://healthjade.com/wp-content/uploads/2017/10/apple-fruit.jpg" alt="apple image" width="104" height="142">
+    
+    
+    <!-- hr element provides thematic break. It is used to separate content-->
+
+    <hr>
+
+    <!-- style tag helps to style color,font,size etc-->
+    <p style="color: red"> This is a paragraph</p>
+
+    <p>Question 1 : How to display this with line breaks and spaces </p>
+        <p>
+            My Bonnie lies over the ocean.
+          
+            My Bonnie lies over the sea.
+          
+            My Bonnie lies over the ocean.
+          
+            Oh, bring back my Bonnie to me.
+          </p>
+    <!-- It is called preformatted text It preserves all the spaces and line breaks formatting-->
+    <pre>
+    My Bonnie lies over the ocean.
+          
+    My Bonnie lies over the sea.
+      
+    My Bonnie lies over the ocean.
+      
+    Oh, bring back my Bonnie to me.       
+    </pre>
+
+    <!-- HTML styles attribute
+    - It is used to style an element like color, font , size etc
+    - syntax :- <tagname style="property:value";>-->
+
+     <!-- color property tells the color of the text-->    
+    <p style="color:red">Hello what are you upto?</p>
+     
+    <!-- font-family property tells the font to be used-->
+    <p style="font-family:verdana">Nothing much</p>
+
+    <!--text-align property defines the horizontal alignment of the text-->
+    <p style="text-align: center;">Listen ! i am coming to your office</p>
+    
+    <!-- HTML formatting-->
+    <b> This is bold text</b>
+    <br>
+    <strong>This is strong text </strong>
+    <br>
+    <i>This is italic text</i>
+    <br>
+    <em>This is italic text with more emphasis</em>
+
+    <!-- HTML quotation-->
+     <!-- Blockquote element defines the section quotes from other website-->
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+        </blockquote>
+
+     <!-- q for small quotation-->
+     <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+     <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948</p>
+     
+     <!-- address tag is used to define contact information . It is usually rendered in italic and browser always adds a line break before and after this tag -->
+     <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+
+    <!-- cite tag is used to define the title of creative work-->
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+    <!-- bi-directional override changes the direction of current text direction-->
+    <p><bdo dir="rtl">This text will be written from right to left</bdo></p>
+
+    <!--HTML colors-->
+    <h1 style="background-color:rgb(255,99,71)">This is rgb</h1>
+    <h1 style="background-color: #ff67ff;">This is hex</h1>
+    <h1 style="background-color: hsl(9, 100%, 64%);">This is hsl</h1>
+    <h1 style="background-color:rgba(255,99,71,0.5);">This is rgba</h1>
+
+    <h1 style="background-color:hsla(9,100%,64%,0.5)">This is hsla</h1>
+    
+    <h1 style="background-color: hsla(9, 100%, 64%, 0.5);"></h1>
+    <!-- There are color values named like rgb , hex , hsl
+    RGB - Red , Green , Blue
+    -> in detail :- 
+    each para(rgb defines the intensity of the color with value b/w 0 and 255
+    ) . 
+    -> then we can infer that there are 256*256*256 possible colors which is 16777216
+    rgb(255,0,0) means red rgb(0,0,255) means blue rgb(0,255,0) means green,
+    Then the question arise what is rgb(0,0,0) here we go it is black 
+    rgb(255,255,255) whoa it is white
+
+    Now how to achieve gray 
+      rgb(100,100,100) , rgb(60,60,60) rgb(50,50,50)
+
+      when we type values equal for all three parameters we get shades of grey
+
+    Now the question arises what is rgba
+
+    ok then rgba is extension of rgb with an alpha channel(which specifies the opacity of the color
+    Now after googling i get to know what is opacity the degree at which the light cannot be transmitted or any opaque object means difficulty to see through 
+    opossite of opacity means transparency
+    
+    so 0.0 means fully transparent, 1.0 means not transparent at all)
+     example : - rgba(255,99,71,0.2)
+
+
+     Now come to hex color values;
+    hex: is hexadecimal value of rgb
+     -- color can be specified in hex value 
+     like #rrggbb where 
+     rr-- red
+     gg-- green
+     bb -- blue 
+
+     Now to convert decimal to hex just divide decimal value with 16 until result become 0 treat it as an integ division in 
+     programming we can use mod operator to find hex values % (mod operator)
+
+     hex values are from 00 to ff same as decimal value (0-255)
+    
+     Now lets try some of the hex values
+     #ff0000 ---- red
+     #ffffff ---- white
+     #000000 --- black
+
+     Then comes
+    hsl : is hue , saturation , lightness
+    hue is the degress on the color wheel 0 is red ,120 is green , and 240 is blue
+    saturation means the intensity of the color -- the more saturation means pure color and less the saturation means it is going towards gray -- percentage value 0% means a ashades of grey , 100% full color
+    lightness --0% -- black and 100% -- white
+     hsl(0,0%,0%)
+     hsl(0,100%,50%)
+-->
+     
 </body>
 </html>
